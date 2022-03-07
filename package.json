@@ -1,0 +1,46 @@
+{
+  "name": "buffered-dispatch",
+  "version": "1.0.0",
+  "description": "Buffer function calls and dispatch them on servers as they become available",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
+  "types": "build/types/index.d.ts",
+  "keywords": [
+    "load-balancer",
+    "load",
+    "balancer",
+    "buffer",
+    "async",
+    "dispatch",
+    "server",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "rollup --config",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "sideEffects": false,
+  "files": [
+    "build"
+  ],
+  "repository": "https://github.com/lbfalvy/buffered-dispatch.git",
+  "homepage": "https://github.com/lbfalvy/buffered-dispatch",
+  "author": "Lawrence Bethlenfalvy <lbfalvy@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/babel-core": "^6.25.7",
+    "@types/jest": "^27.4.1",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "rollup": "^2.69.0",
+    "rollup-plugin-dts": "^4.2.0",
+    "rollup-plugin-ts": "^2.0.5",
+    "ts-node": "^10.6.0"
+  },
+  "dependencies": {
+  }
+}
